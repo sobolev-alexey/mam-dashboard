@@ -21,17 +21,16 @@
     "iota",
     "tangle",
     "mam",
-    "data marketplace",
     "sensor",
     "API"
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/iotaledger/data-marketplace/issues"
+    "url": "https://github.com/sobolev-alexey/mam-dashboard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iotaledger/data-marketplace.git"
+    "url": "https://github.com/sobolev-alexey/mam-dashboard.git"
   },
   "dependencies": {
     "@iota/converter": "^1.0.0-beta.11",
