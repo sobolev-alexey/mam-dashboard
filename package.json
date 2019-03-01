@@ -1,0 +1,64 @@
+{
+  "name": "mam-dashboard",
+  "version": "1.0.0",
+  "description": "IOTA MAM Dashboard",
+  "contributors": [
+    {
+      "name": "Alexey Sobolev"
+    },
+    {
+      "name": "Chris Dukakis"
+    },
+    {
+      "name": "Lewis Freiberg"
+    }
+  ],
+  "author": {
+    "name": "Alexey Sobolev, Chris Dukakis, Lewis Freiberg (IOTA Foundation)",
+    "website": "https://iota.org"
+  },
+  "keywords": [
+    "iota",
+    "tangle",
+    "mam",
+    "data marketplace",
+    "sensor",
+    "API"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iotaledger/data-marketplace/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iotaledger/data-marketplace.git"
+  },
+  "dependencies": {
+    "@iota/converter": "^1.0.0-beta.11",
+    "@iota/http-client": "^1.0.0-beta.11",
+    "chartist": "^0.11.0",
+    "date-fns": "^1.30.1",
+    "mam.client.js": "iotaledger/mam.client.js",
+    "react": "^16.8.3",
+    "react-chartist": "^0.13.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "styled-components": "^4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "firebase deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
