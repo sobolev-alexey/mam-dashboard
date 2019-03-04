@@ -2,30 +2,25 @@ import React from 'react';
 import styled from 'styled-components'
 import { format } from 'date-fns'
 
-export default props => (
+export default ({ messages }) => (
   <AuditBox>
-    {props.messages.map(log => (
-      <a
-        key={log.ts}
-        href={`https://testnet.thetangle.org/transaction/${log.tx}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Log>
-          {' '}
-          <span>{format(log.ts, 'HH:mm:ss')}</span>
-          <span>{`Temperature: ${log.t}`}</span>
-          <span>{`Gradient: ${log.g}`}</span>
-          {/* <span>
-            {log.time ? `Time was set: ${log.time}` : "Time was not set"}
-          </span> */}
-        </Log>
-      </a>
-    ))}
     {
-      !props.messages[0] && (
-        <Log>No messages yet</Log>
-      )
+      messages && messages.length 
+      ? messages.map(message => (
+        <a
+          key={message.ts}
+          href={`https://devnet.thetangle.org/address/${message.address}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Log>
+            <span>{format(message.ts, 'HH:mm:ss')}</span>
+            <span>{`Temperature: ${message.t}`}</span>
+            <span>{`Gradient: ${message.g}`}</span>
+          </Log>
+        </a>
+        ))
+      : (<Log>No messages yet</Log>)
     }
   </AuditBox>
 )

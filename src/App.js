@@ -84,7 +84,7 @@ class App extends Component {
         localStorage.setItem('root', message.root)
       }
 
-      // packet.tx = message.root
+      packet.address = message.root
       messages.push(packet)
 
       /// Adjust line chart
